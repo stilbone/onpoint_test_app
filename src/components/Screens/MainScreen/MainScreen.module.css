@@ -1,0 +1,230 @@
+@import url(//db.onlinewebfonts.com/c/5fd82f3bb8dcfc3ce611fab541b92241?family=DIN+Pro+Medium);
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    user-select: none;    
+    background-image: url('../../../resourses/png/bg1.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 21.5vh;
+    padding-bottom: 15vh;
+    padding-left: 7vw;
+    padding-right: 4.5vw;  
+    
+}
+
+.hello{
+    font-family: 'DIN Pro Medium', sans-serif;
+    font-size: 2.75vmin;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: .1rem;
+    margin: 0;    
+    z-index: 10;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-family: "Gilroy", sans-serif;
+    font-size: 13vmin;
+    margin: 0;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;   
+    z-index: 10; 
+}
+
+.title span {
+    font-weight: bold;
+}
+
+button{
+    border: none;
+    height: 10vh;
+    width: 36vmin;
+    background-color: #ff6a9f;
+    border-radius: 4vw;
+    color: #171717;
+    font-family: 'DIN Pro Medium', serif;
+    font-size: 3vmin;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2vw;
+    font-weight: lighter;
+    letter-spacing: 0.2vmin;    
+    cursor: pointer;  
+    position: relative;
+    bottom: 13vh;  
+    left: 50vw;
+    z-index: 10;
+}
+
+.buttonArrow {    
+    height: 7.5vmin;
+    padding-right: 1.9vmin;
+}
+
+
+@media (min-width: 1025px){
+    button {
+        bottom: 14vh;  
+        left: 80vmin;  
+    }
+    .hello{
+        padding-top: 10vmin;
+        padding-left: 1vw;
+    }
+
+    .title {
+        font-size: 16vmin; 
+        padding-left: 1vw;       
+    }
+
+} 
+
+/*!!! Patterns !!!*/
+
+.thing1 img {
+    position: absolute;
+    bottom: 5vh;
+    left: 0vw;
+    height: 20vmin;
+}
+
+.thing2 img{
+    position: absolute;
+    top: 6vh;
+    right: 8vw;
+    height: 10vmin;
+}
+
+.thing3 img{
+    position: absolute;
+    bottom: 12vh;
+    left: 32vw;
+    height: 8vmin;
+}
+
+.thing4 img{
+    position: absolute;
+    top: 22vh;
+    right: 0vw;
+    height: 12vmin;
+    z-index: 20;
+}
+
+.thing5 img{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    height: 14vmin;
+}
+
+.animated_thing1 img {
+    position: absolute;
+    bottom: 0vh;
+    right: 30vw;
+    height: 15vmin;
+    animation: animate_thing1 8s infinite linear;
+}
+.animated_thing2 img {
+    position: absolute;
+    bottom: 25vh;
+    left: 4vw;
+    height: 9vmin;
+    animation: animate_thing2 12s infinite linear;    
+}
+.animated_thing3 img {
+    position: absolute;
+    top: 17vh;
+    right: 15vw;
+    height: 12vmin;
+    z-index: 30;
+    animation: animate_thing3 20s infinite linear;  
+
+}
+.animated_thing4 img {
+    position: absolute;
+    top: 12vh;
+    right: 25vw;
+    height: 5vmin;
+    animation: animate_thing4 14s infinite linear;   
+}
+
+@keyframes animate_thing1 {
+    0%{
+        height: 14.5vmin;
+        right: 29.7vw;
+        bottom: 0vmin;
+    }    
+    50%{
+        height: 15.5vmin;
+        right: 30vw;
+        bottom: -1vmin;
+
+    }
+    100%{
+        height: 14.5vmin;
+        right: 29.7vw;
+        bottom: 0vmin;
+    }
+}
+
+@keyframes animate_thing2{
+    0%{
+        bottom: 25vh;
+        left: 4vw;        
+    }
+    50%{
+        bottom: 20vh;
+        left: 5vw;        
+    }
+    100%{
+        bottom: 25vh;
+        left: 4vw;        
+    }
+}
+@keyframes animate_thing3{
+    0%{
+        top: 17vh;
+        right: 15vw;  
+        transform: rotate(0deg);   
+    }
+    50%{
+        top: 19vh;
+        right: 12vw;       
+    }
+    100%{
+        top: 17vh;
+        right: 15vw; 
+        transform: rotate(360deg);    
+    }
+}
+
+@keyframes animate_thing4{
+    0%{
+        top: 12vh;
+        right: 25vw;
+    }
+    50%{
+        top: 11vh;
+        right: 27vw;
+    }
+    100%{
+        top: 12vh;
+        right: 25vw; 
+    }
+}

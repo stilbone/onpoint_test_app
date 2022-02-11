@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { CarouselCustom } from './components/CarouselCustom/CarouselCustom';
+import { MainScreen } from './components/Screens/MainScreen/MainScreen'
+import { AboutScreen } from './components/Screens/AboutScreen/AboutScreen'
+import { DescriptionScreen } from './components/Screens/DescriptionScreen/DescriptionScreen'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <CarouselCustom>
+          <div className='item'>
+            <MainScreen />
+          </div>
+          <div className='item'>
+            <AboutScreen />
+          </div>
+          <div className='item'>
+            <DescriptionScreen />
+          </div>
+        </CarouselCustom>
     </div>
   );
 }

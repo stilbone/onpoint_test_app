@@ -1,0 +1,285 @@
+@import url(//db.onlinewebfonts.com/c/5fd82f3bb8dcfc3ce611fab541b92241?family=DIN+Pro+Medium);
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;    
+    background-image: url('../../../resourses/png/bg3.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Base Content */
+
+.content{
+    padding-left: 35vw;
+}
+
+.keywords{
+    font-family: 'DIN Pro Medium', serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    margin: 0;
+    font-size: 3vmin;
+    padding-top: 6vh;
+    padding-bottom: 1vh;
+    
+    }
+
+.brandname{
+    font-family: 'Gilroy', serif;
+    text-transform: uppercase;  
+    font-size: 12vmin;  
+    letter-spacing: 1vmin;
+    font-weight: lighter;
+    margin: 0;
+    padding-bottom: 10vmin;
+    margin-left: -.8vmin; 
+    
+}
+
+.brandname span {
+    font-weight: bold;    
+}
+
+.features{
+    display: flex;    
+    font-family: 'DIN Pro Medium', serif;
+    font-size: 3vmin;    
+}
+
+.featiresIcon{
+    height: 8vmin;
+    width: 9vmin;
+    position: absolute;       
+}
+
+
+.features1{
+    width: 30vw;
+    height: 32vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 33px 12px rgba(34, 60, 80, 0.1);  
+    margin: 0; 
+    letter-spacing: 0.09vw;
+    margin-right: 5vmin;
+    border-top-right-radius: 6vmin;
+    border-bottom-right-radius: 6vmin;    
+    padding-top: 8vmin;
+    padding-bottom: -8vh;
+    padding-right: 3vmin;    
+}
+
+.features1::before{
+    content: '';
+    width: 21vw;
+    height: 40vh;
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;    
+    right: -135vw;
+    bottom: 12.65vmin;
+}
+
+.features1 img {
+    bottom: 48vmin;
+    left: 235vw;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.features2{
+    width: 20vw;
+    height: 15vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;    
+    flex-direction: column; 
+    letter-spacing: 0.09vw;   
+    margin: 0;
+    margin-bottom: 5vmin;
+    padding: 3vmin;
+    box-shadow: 4px 4px 33px 12px rgba(34, 60, 80, 0.1);   
+    border-radius: 6vmin;   
+}
+.features2 img{
+    bottom: 48vmin;
+    left: 275vw;
+}
+
+
+.moreButton {
+    position: static;
+    width: 25vw;
+    z-index: 0;
+}
+.moreButton img {
+    height: 7.5vmin;
+    padding-right: 1.9vmin;
+}
+
+/* Pictures */
+
+
+.bottle{
+    position: absolute;
+    height: 100vh;
+    bottom: 0;
+    left: 200vw;
+    user-select: none;
+    pointer-events: none;
+    z-index: 20;      
+}
+
+/* Bubbles */
+
+.bubbles img {
+    position: absolute; 
+    user-select: none;     
+}
+
+.bubble1{       
+    bottom: 0vh;
+    left: 220vw;
+    height: 7vmin;
+    z-index: 30;
+}
+
+.bubble2{
+    bottom: 19vh;
+    left: 203vw;
+    height: 9vmin;
+    z-index: 30;
+}
+
+.bubble3{
+    bottom: 16vh;
+    left: 223vw;
+    height: 9vmin;
+    z-index: 15;
+}
+
+.bubble4{
+    bottom: 37vh;
+    left: 201vw;
+    height: 4vmin;
+    z-index: 30;
+    opacity: 0.8;
+}
+
+.bubble5{
+    bottom: 45vh;
+    left: 218vw;
+    height: 15vmin;
+    z-index: 15;
+}
+
+.bubble6{
+    bottom: 68vh;
+    left: 208vw;
+    height: 4vmin;
+    z-index: 15;    
+}
+
+.bubble7{
+    bottom: 71vh;
+    left: 218vw;
+    height: 9vmin;
+    z-index: 30;
+    opacity: 0.7;
+}
+
+.bubble8{
+    bottom: 86vh;
+    left: 219vw;
+    height: 5vmin;
+    z-index: 30;
+    opacity: 0.6;
+}
+
+
+/* Module Window */
+
+.moduleWindow{    
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 200vw;
+    width: 100vw;
+    height: 100vh;
+    top: 0;    
+    justify-content: center;
+    align-items: center;    
+}
+
+.moduleView{  
+    position: relative;
+    top: 3vh;
+    left: 6vw;  
+    width: 82vw;
+    height: 74vh;
+    background-color: #fff;
+    border-top-right-radius: 6vmin;
+    border-bottom-right-radius: 6vmin;    
+}
+
+.moduleClsBtn{
+    position: relative;
+    left: 74vw;
+    top: 4vh;
+    height: 5vmin;
+    cursor: pointer;    
+}
+
+.moduleContent{
+    position: relative;
+    left: 20vw;
+    bottom: 8.9vh;
+    pointer-events: none;
+
+}
+
+.moduleContent .brandname{
+    padding: 0;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+}
+
+.listPoint{
+    font-family: "Gilroy", serif;
+    font-weight: bolder;
+    color: #8cc9e8;
+    font-size: 2.7vmin;
+    letter-spacing: 0.4vmin;
+}
+
+.listText{
+    font-family: "DIN Pro Medium", serif;
+    font-weight: lighter;
+    color: #171717;
+    letter-spacing: 0.1vmin;
+}
+
+
+@media (min-width: 1025px){
+    .moduleView{
+        left: 4vw; 
+    }
+}
