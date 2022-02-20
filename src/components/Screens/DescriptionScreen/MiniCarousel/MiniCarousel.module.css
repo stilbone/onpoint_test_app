@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Readex+Pro:wght@200&display=swap");
+
+/*!!! Main !!!*/
+.mainContainer {
+  
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  
+}
+
+.window {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  
+}
+
+.allPagesContainer {  
+  display: flex;
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  
+}
+
+.navPanel{
+  z-index: 100;
+}
+
+.leftArrow {
+  height: 1vmin;
+  width: 1vmin;
+  border-left: #000 2px solid;
+  border-bottom: #000 2px solid;
+  position: absolute;
+  transform: rotate(45deg);  
+  cursor: pointer;
+}
+
+.rightArrow {
+  height: 1vmin;
+  width: 1vmin;
+  border-right: #000 2px solid;
+  border-top: #000 2px solid;
+  position: absolute;
+  transform: rotate(45deg);   
+  left: 9vmin;  
+  cursor: pointer;
+}
+
+.point {
+  position: absolute;
+  height: 1vmin;
+  width: 1vmin;
+  border: #000 1px solid;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.point1 { 
+  left: 3vmin;  
+}
+
+.point2{  
+  left: 6vmin;  
+}
+
+.pointFill {
+    border: #fc6da9 1px solid;
+    background-color: #fc6da9;
+}

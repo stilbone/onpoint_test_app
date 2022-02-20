@@ -3,74 +3,137 @@
 /* Main */
 
 .main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    user-select: none;    
-    background-image: url('../../../resourses/png/bg2.png');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 7vw;
-    font-family: 'DIN Pro Medium', serif;
+  min-width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  user-select: none;
+  background-image: url("../../../resourses/png/bg2.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "DIN Pro Medium", serif;
 }
-.title {    
-    text-transform: uppercase;
-    letter-spacing: 0.2vw;
-    font-weight: lighter;
-    width: 18vw;
-    z-index: 10;
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-weight: lighter;
+  width: 18vw;
+  z-index: 10;
+  padding-left: 7vw;
 }
 
 .text {
-    background-color: #fff;
-    font-size: 3vmin;
-    overflow-y: auto;
-    z-index: 10;
-    width: 75vw;
-    height: 50vh;
-    font-weight: lighter;
-    padding: 4vmin;
-    border-radius: 6vmin;
-    box-shadow: 4px 4px 33px 12px rgba(34, 60, 80, 0.2);    
+  background-color: transparent;
+  font-size: 3vmin;
+  overflow-y: scroll;
+  z-index: 20;
+  width: 80vw;
+  height: 50vh;
+  font-weight: lighter;
+  border-radius: 6vmin;
+  direction: rtl;
+  text-align: left;
+  padding-left: 7vmin;
+  margin-left: 7vw;
 }
-
 .text span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
+.customBackground {
+  content: "";
+  width: 83vw;
+  height: 55vh;
+  right: -94.6vw;
+  bottom: 15.7vh;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  border-radius: 5vmin;
+  box-shadow: 4px 4px 33px 12px rgb(34 60 80 / 20%);
+}
+.customScrollLine {
+  content: "";
+  width: 0.6vmin;
+  height: 50vmin;
+  position: absolute;
+  right: -11.2vmin;
+  bottom: 18.5vmin;
+  z-index: 10;
+  border-radius: 8vmin;
+  background-color: #000;
+}
+
+@media (max-width > 1025px) {
+  .customBackground {
+    width: 83vw;
+    height: 56vh;
+    right: -93.6vw;
+    bottom: 17.7vh;
+  }
+  .customScrollLine {
+    height: 50vh;
+    right: -8.4vw;
+    bottom: 18.5vh;
+  }
+}
 
 /* Scrollbar */
 
 .text::-webkit-scrollbar {
-    width: 2vmin;
-    background-color: transparent;    
-}  
-.text::-webkit-scrollbar-thumb {
-    border-radius: 1vmin;
-    background-color: #cf578d;
-    width: 3vmin;
-    height: 10vh;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-    float: right;    
-    margin: 10px;
+  width: 3vmin;
+  display: block;
+  background-color: transparent;
+  border-radius: 8vmin;
 }
-  
-.text::-webkit-scrollbar-track {    
-    border-radius: 1vmin;
-    background-color: transparent;    
+.text::-webkit-scrollbar-thumb {
+  border-radius: 8vmin;
+  background-color: #fc6da9;
+  width: 3vmin;
+  box-shadow: inset -15px 3px 8px 10px rgba(34, 60, 80, 0.2);
+  z-index: 20;
+  position: absolute;
 }
 
+.text::-webkit-scrollbar-track {
+  background-color: transparent;
+}
 
 /* Animation */
 
-.tozoids img{
-    position: absolute;
-    height: 80vh;
-    right: -100vw;
-    top: 10vh;    
+.tozoids {
+  position: absolute;
+  height: 80vh;
+  right: -100vw;
+  top: 10vh;
+}
+.tozoidsAnimated {
+  animation: tozoids_up 2s linear;
 }
 
+@keyframes tozoids_up {
+  0% {
+    height: 80vh;
+    right: -120vw;
+    top: 30vh;
+    opacity: 0;
+  }
+  50% {
+    height: 80vh;
+    right: -110vw;
+    top: 20vh;
+    opacity: 0;
+  }
+
+  100% {
+    height: 80vh;
+    right: -100vw;
+    top: 10vh;
+    opacity: 1;
+  }
+}

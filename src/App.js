@@ -7,16 +7,10 @@ import { DescriptionScreen } from './components/Screens/DescriptionScreen/Descri
 function App() {
   return (
     <div className="App">
-        <CarouselCustom>
-          <div className='item'>
-            <MainScreen />
-          </div>
-          <div className='item'>
-            <AboutScreen />
-          </div>
-          <div className='item'>
-            <DescriptionScreen />
-          </div>
+        <CarouselCustom>          
+            <MainScreen />          
+            <AboutScreen />          
+            <DescriptionScreen />          
         </CarouselCustom>
     </div>
   );

@@ -1,0 +1,110 @@
+@import url(//db.onlinewebfonts.com/c/5fd82f3bb8dcfc3ce611fab541b92241?family=DIN+Pro+Medium);
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+
+.moreButton {
+    position: static;
+    width: 25vw;
+    
+  }
+  .moreButton img {
+    height: 7.5vmin;
+    padding-right: 1.9vmin;
+  }
+
+
+/* Module Window */
+
+.keywords {
+    font-family: "DIN Pro Medium", serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    margin: 0;
+    font-size: 3vmin;
+    padding-top: 6vh;
+    padding-bottom: 1vh;
+}
+  
+.brandname {
+    font-family: "Gilroy", serif;
+    text-transform: uppercase;
+    font-size: 12vmin;
+    letter-spacing: 1vmin;
+    font-weight: lighter;
+    margin: 0;
+    padding-bottom: 10vmin;
+    margin-left: -0.8vmin;
+}
+
+.brandname span {
+    font-weight: bold;
+}
+
+.moduleWindow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 200vw;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    justify-content: center;
+    align-items: center;   
+}
+  
+.moduleView {
+    position: relative;
+    top: 3vh;
+    left: 6vw;
+    width: 82vw;
+    height: 74vh;
+    background-color: #fff;
+    border-top-right-radius: 6vmin;
+    border-bottom-right-radius: 6vmin;  
+    
+}
+  
+.moduleClsBtn {
+    position: relative;
+    left: 74vw;
+    top: 4vh;
+    height: 5vmin;
+    cursor: pointer;
+    z-index: 100;
+}
+  
+.moduleContent {
+    position: relative;
+    left: 20vw;
+    bottom: 8.9vh;    
+}
+  
+.moduleContent .brandname {
+    padding: 0;
+}
+  
+.list {
+    list-style: none;
+    padding: 0;
+}
+  
+.listPoint {
+    font-family: "Gilroy", serif;
+    font-weight: bolder;
+    color: #8cc9e8;
+    font-size: 2.7vmin;
+    letter-spacing: 0.4vmin;
+}
+  
+.listText {
+    font-family: "DIN Pro Medium", serif;
+    font-weight: lighter;
+    color: #171717;
+    letter-spacing: 0.1vmin;
+}
+  
+@media (min-width: 1025px) {
+
+    .moduleView {
+      left: 4vw;
+    }
+}
